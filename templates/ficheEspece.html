@@ -583,8 +583,15 @@
             {% endif %}
 
             <div class="panel panel-default" id="graphBloc">
-                <h4 class="title-bar title-spaced center strong">Observations par classes d'altitudes</h4>
-                <div id="altiChart"></div>
+                {% if configuration.AFFICHAGE_GRAPH_ALTITUDE %}
+                    <h4 class="title-bar title-spaced center strong">Observations par classes d'altitudes</h4>
+                    <div id="altiChart"></div>
+                {% else %}
+                    <h4 style="display: none;" class="title-bar title-spaced center strong">Observations par classes d'altitudes</h4>
+                    <div style="display: none;" id="altiChart"></div>
+                {% endif %}
+                   
+               
                 <h4 class="title-bar title-spaced center strong">Observations mensuelles</h4>
                 <div id="phenologyChart"></div>
             </div>

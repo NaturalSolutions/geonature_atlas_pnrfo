@@ -136,6 +136,9 @@ REDIMENSIONNEMENT_IMAGE = False
 # si redimmentionnement image = True, indiquer l'URL de taxhub
 TAXHUB_URL = "http://mondomaine.fr/taxhub"
 
+# Affiche ou non le graph sur l'altitude
+AFFICHAGE_GRAPH_ALTITUDE = True
+
 #### ID DES ATTRIBUTS DESCRIPTIFS DES TAXONS DE LA TABLE vm_cor_taxon_attribut
 ATTR_DESC = 100
 ATTR_COMMENTAIRE = 101

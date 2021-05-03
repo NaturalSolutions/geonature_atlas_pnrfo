@@ -56,6 +56,7 @@ class AtlasConfig(Schema):
     ID_GOOGLE_ANALYTICS = fields.String(missing="UA-xxxxxxx-xx")
     GLOSSAIRE = fields.Boolean(missing=False)
     IGNAPIKEY = fields.String(missing="")
+    AFFICHAGE_GRAPH_ALTITUDE = fields.Boolean(missing=True)
     AFFICHAGE_INTRODUCTION = fields.Boolean(missing=True)
     AFFICHAGE_FOOTER = fields.Boolean(missing=False)
     AFFICHAGE_STAT_GLOBALES = fields.Boolean(missing=True)
